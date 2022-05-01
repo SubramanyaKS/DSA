@@ -8,12 +8,12 @@ public class RodCutting {
           price[i]=in.nextInt();
       }
       in.close();
-      getMax(price,n);
+      System.out.println(getMax(price,n));
   }  
   public static int getMax(int price[], int n){
     int dp[][]=new int[n][price.length+1];
     
-        for(int i=0;i<n+1;i++){
+        for(int i=0;i<n;i++){
             for(int j=0;j<price.length+1;j++){
                 if(j==0||i==0){
                     dp[i][j]= 0;
