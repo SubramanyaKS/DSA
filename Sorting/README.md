@@ -5,3 +5,4 @@
 3. Insertion Sort.
 4. Merge Sort.
 5. Selection Sort.
+6. Shell Sort
