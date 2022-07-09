@@ -1,5 +1,7 @@
 /**
  * Climb Strair using tabulation method
+ * 
+ * TC O(N) SC  O(N)
  */
 import java.util.Arrays;
 import java.util.Scanner;
