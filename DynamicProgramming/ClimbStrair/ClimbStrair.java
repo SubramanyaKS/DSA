@@ -1,5 +1,7 @@
 /**
  * Climb Stair using Memorization Technique
+ * 
+ * TC O(N) SC O(N)+O(N)
  */
 import java.util.Arrays;
 import java.util.Scanner;
