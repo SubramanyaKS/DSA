@@ -14,7 +14,7 @@ public class FrogJump1 {
         in.close();
         int dp[] = new int[n];
         Arrays.fill(dp, -1);
-        frog(n,height,dp);
+        System.out.println(frog(n,height,dp));
 
 
     }
