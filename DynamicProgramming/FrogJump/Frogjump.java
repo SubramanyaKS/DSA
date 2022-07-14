@@ -15,7 +15,7 @@ public class Frogjump {
         in.close();
         int dp[] = new int[n];
         Arrays.fill(dp, -1);
-        jump(0,n-1,height,dp);
+        System.out.println(jump(0,n-1,height,dp));
 
 
     }
