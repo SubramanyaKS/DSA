@@ -1,3 +1,6 @@
+/**
+ * Frog Jump using tabulaion
+ */
 import java.util.Arrays;
 import java.util.Scanner;
 public class FrogJump1 {
