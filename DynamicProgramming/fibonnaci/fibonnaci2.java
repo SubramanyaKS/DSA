@@ -1,6 +1,7 @@
 /**
  * Fibonnaci series using space optimization
  */
+package fibonnaci;
 import java.util.Scanner;
 
 public class fibonnaci2 {
