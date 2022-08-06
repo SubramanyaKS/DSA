@@ -3,6 +3,7 @@
  * Maximum sum of Non adjacent element
  * 
  */
+package HouseRobber;
 import java.util.Arrays;
 import java.util.Scanner;
 public class HouseRobber {
