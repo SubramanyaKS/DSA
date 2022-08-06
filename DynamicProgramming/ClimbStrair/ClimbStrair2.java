@@ -3,6 +3,7 @@
  * 
  * TC O(N) SP O(1)
  */
+package ClimbStrair;
 import java.util.Scanner;
 
 public class ClimbStrair2 {
