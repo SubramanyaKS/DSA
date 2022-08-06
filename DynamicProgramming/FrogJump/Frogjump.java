@@ -1,6 +1,7 @@
 /**
  * Frog Jump using Memorization
  */
+package FrogJump;
 import java.util.Arrays;
 import java.util.Scanner;
 public class Frogjump {
