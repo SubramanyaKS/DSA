@@ -4,6 +4,7 @@
 /** 
  * TC o(N) SC O(N)+O(N)
  */
+package fibonnaci;
 import java.util.Arrays;
 import java.util.*;
 public class fibonnaci{
