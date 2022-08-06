@@ -22,7 +22,7 @@ public class UniquePath1 {
             dp[i][n-1]=1;
         }
         for(int i=n-1;i>=0;i--){
-            dp[m-1][i]=1;
+            dp[m-1][i]=1;  
         }
         for(int cr=m-2;cr>=0;cr--){
             for(int cc=n-2;cc>=0;cc--){
