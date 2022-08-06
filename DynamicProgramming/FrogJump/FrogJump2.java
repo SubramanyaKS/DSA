@@ -1,6 +1,7 @@
 /**
  * Frog Jump using space Optimization
  */
+package FrogJump;
 import java.util.Scanner;
 public class FrogJump2 {
     public static void main(String[] args) {
