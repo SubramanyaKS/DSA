@@ -1,6 +1,7 @@
 /**
  * Fibonnaci series using Tabulation method
  */
+package fibonnaci;
 import java.util.Arrays;
 import java.util.Scanner;
 
