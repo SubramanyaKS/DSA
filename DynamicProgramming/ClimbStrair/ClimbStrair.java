@@ -3,6 +3,7 @@
  * 
  * TC O(N) SC O(N)+O(N)
  */
+package ClimbStrair;
 import java.util.Arrays;
 import java.util.Scanner;
 
