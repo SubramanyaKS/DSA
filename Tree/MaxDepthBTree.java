@@ -8,5 +8,4 @@ public class MaxDepthBTree {
         int r= maxDepth(node.right);
         return 1+Math.max(l, r);
     }
-    
 }
