@@ -7,3 +7,5 @@ For each edge (u, v) ∈ G.E ordered by increasing order by weight(u, v):
     A = A ∪ {(u, v)}
     UNION(u, v)
 return A
+
+The time complexity Of Kruskal's Algorithm is: O(E log E).
