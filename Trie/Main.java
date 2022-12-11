@@ -2,7 +2,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Trie head = new Trie();
+        Trie2 head = new Trie2();
  
         head.insert("techie");
         head.insert("techi");
@@ -21,15 +21,15 @@ public class Main {
         System.out.println(head.search("techiedelight"));   // true
     }
 }
-class Trie{
+class Trie2{
     // Define the alphabet size (26 characters for `a – z`)
     private static final int CHAR_SIZE = 26;
  
     private boolean isLeaf;
-    private List<Trie> children = null;
+    private List<Trie2> children = null;
  
     // Constructor
-    Trie()
+    Trie2()
     {
         isLeaf = false;
         children = new ArrayList<>(Collections.nCopies(CHAR_SIZE, null));
@@ -41,14 +41,14 @@ class Trie{
         System.out.println("Inserting \"" + key + "\"");
  
         // start from the root node
-        Trie curr = this;
+        Trie2 curr = this;
  
         // do for each character of the key
         for (char c: key.toCharArray())
         {
             // create a new Trie node if the path does not exist
             if (curr.children.get(c - 'a') == null) {
-                curr.children.set(c - 'a', new Trie());
+                curr.children.set(c - 'a', new Trie2());
             }
  
             // go to the next node
@@ -65,7 +65,7 @@ class Trie{
     {
         System.out.print("Searching \"" + key + "\" : ");
  
-        Trie curr = this;
+        Trie2 curr = this;
  
         // do for each character of the key
         for (char c: key.toCharArray())
