@@ -14,6 +14,22 @@ public class Trie {
         }
 
     }
+    public boolean search(String word){
+        TrieNode node = getNode(word);
+        return node!=null && node.isWard;
+    }
+    public TrieNode getNode(String word){
+        TrieNode curr =root;
+        for(int i=0;i<word.length();i++){
+            char c= word.charAt(i);
+            if(curr.children[c-'a']==null){
+                return null;
+            }
+            curr =curr.children[c-'a'];
+        }
+        return curr;
+
+    }
     public void insert(String word){
         if(word==null || word.isEmpty()){
             throw new IllegalArgumentException("Invalid");
@@ -40,5 +56,7 @@ public class Trie {
     public static void main(String[] args) {
         Trie trie = new Trie();
         trie.insert("word");
+        System.out.println(trie.search("word"));
+        System.out.println(trie.search("wor"));
     }
 }
