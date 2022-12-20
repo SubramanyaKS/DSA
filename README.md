@@ -1,6 +1,6 @@
 # DSA Practice
 
-This is my practice of DSA Problems.
+This is my practice of DSA Problems from various source.
 
 ## Credits.
 
