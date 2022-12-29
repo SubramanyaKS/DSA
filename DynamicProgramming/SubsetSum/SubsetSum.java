@@ -27,6 +27,7 @@ public class SubsetSum {
         if(arr[n-1]>sum){
             return subsetSum(arr, sum, n-1);
         }
+        //include or exclude element
         return subsetSum(arr, sum, n-1)|| subsetSum(arr, sum-arr[n-1], n-1);
 
     }
