@@ -46,7 +46,5 @@ public class EqualSum {
         if (isSubsetSum(arr, n - 1, sum, dp) != 0 || isSubsetSum(arr, n - 1, sum - arr[n - 1], dp)!= 0)
             return dp[n][sum] = 1;
         return dp[n][sum] = 0;
-    }
-
-    
+    }   
 }
