@@ -5,8 +5,8 @@ package SubsetSum;
 public class CountSubset {
     public static void main(String[] args) {
         int n = 4;
-        int a[] = { 3, 3, 3, 3 };
-        int sum = 6;
+        int a[] = { 3, 5,6,7};
+        int sum = 9;
         System.out.println(countSubSet(a, n, sum));
     }
 
