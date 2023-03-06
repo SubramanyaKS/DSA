@@ -1,0 +1,8 @@
+0/1 Knapsack variation
+
+1. subsetsum problem
+2. count of subsetsum
+3. equal sum partition
+4. Minimum subset sum difference
+5. Target sum
+6. 1Number of subset with given difference
