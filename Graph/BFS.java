@@ -17,21 +17,31 @@ public class BFS {
         adj[v].add(w);
     }
 
-    void BFSTraversal(int s) {
+    void BFSTraversal(int source) {
+        //visited array
         boolean visited[] = new boolean[V];
+        //queue declaration
         LinkedList<Integer> queue = new LinkedList<>();
-        visited[s] = true;
-        queue.add(s);
+        //set the visited of root/source to true
+        visited[source] = true;
+        //add the source to queue
+        queue.add(source);
+        //untile queue is empty do following
         while (queue.size() != 0) {
-            s = queue.poll();
-            System.out.print(s + " ");
-
-            Iterator<Integer> i = adj[s].listIterator();
+            //remove the front element and add to source
+            source = queue.poll();
+            System.out.print(source + " ");
+            //check the neighbouring node of source through iteration 
+            Iterator<Integer> i = adj[source].listIterator();
+            //until all neighbouring nodes
             while (i.hasNext()) {
-                int n = i.next();
-                if (!visited[n]) {
-                    visited[n] = true;
-                    queue.add(n);
+                int neighbourNode = i.next();
+                //if the node is not visted 
+                //then mark it has visited
+                //add the node to queue
+                if (!visited[neighbourNode]) {
+                    visited[neighbourNode] = true;
+                    queue.add(neighbourNode);
                 }
             }
         }
