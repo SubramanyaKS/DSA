@@ -17,11 +17,15 @@ public class DFS {
     }
 
     void DFSTraversal(int v) {
+        //make visited of source to true
         visited[v] = true;
         System.out.println(v + " ");
+        //iterate through the adjacents of source
         Iterator<Integer> ite = adjLists[v].listIterator();
+        //untill adjacent node is not empty
         while (ite.hasNext()) {
             int adj = ite.next();
+            // if node is not visited call the function with the node
             if (!visited[adj])
                 DFSTraversal(adj);
         }
