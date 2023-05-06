@@ -22,15 +22,20 @@ public class TwoPointer {
 
     }
     public int twopair(int arr[],int n, int k){
+        //initialize two pointers to first and last index
         int i=0;
         int j=n-1;
+        //go through loop untile the first index value is greater then second
         while(i<j){
+            //if sum of array first index value and array second index value is equal to target
             if(arr[i]+arr[j]==k){
                 return 1;
             }
+            //if sum is less then target increase first pointer
             else if(arr[i]+arr[j]<k){
                 i++;
             }
+            //else decrease the last pointer
             else{
                 j--;
             }
