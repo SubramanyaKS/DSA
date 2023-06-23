@@ -1,6 +1,7 @@
 # DSA Practice
 
 This is my practice of DSA Problems from various source.
+Solution is only in Java
 
 ## Credits.
 
